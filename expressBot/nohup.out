@@ -1,0 +1,52 @@
+
+> expressBot@0.0.0 start-express /home/ec2-user/expressBot
+> npm run build && node lib/server-express.js
+
+
+> expressBot@0.0.0 build /home/ec2-user/expressBot
+> babel src --presets babel-preset-es2015 --out-dir lib
+
+src/server-express.js -> lib/server-express.js
+Bot is ready for input!
+===> ..  Server is now running on port 5000
+yw: [object Object]
+ans: [object Object]
+sh: line 1: 26312 Killed                  node lib/server-express.js
+
+npm ERR! Linux 4.9.32-15.41.amzn1.x86_64
+npm ERR! argv "/home/ec2-user/.nvm/v6.11.0/bin/node" "/home/ec2-user/.nvm/v6.11.0/bin/npm" "run" "start-express"
+npm ERR! node v6.11.0
+npm ERR! npm  v3.10.10
+npm ERR! code ELIFECYCLE
+npm ERR! expressBot@0.0.0 start-express: `npm run build && node lib/server-express.js`
+npm ERR! Exit status 137
+npm ERR! 
+npm ERR! Failed at the expressBot@0.0.0 start-express script 'npm run build && node lib/server-express.js'.
+npm ERR! Make sure you have the latest version of node.js and npm installed.
+npm ERR! If you do, this is most likely a problem with the expressBot package,
+npm ERR! not with npm itself.
+npm ERR! Tell the author that this fails on your system:
+npm ERR!     npm run build && node lib/server-express.js
+npm ERR! You can get information on how to open an issue for this project with:
+npm ERR!     npm bugs expressBot
+npm ERR! Or if that isn't available, you can get their info via:
+npm ERR!     npm owner ls expressBot
+npm ERR! There is likely additional logging output above.
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     /home/ec2-user/expressBot/npm-debug.log
+
+> expressBot@0.0.0 start-express /home/ec2-user/expressBot
+> npm run build && node lib/server-express.js
+
+
+> expressBot@0.0.0 build /home/ec2-user/expressBot
+> babel src --presets babel-preset-es2015 --out-dir lib
+
+src/server-express.js -> lib/server-express.js
+Bot is ready for input!
+===> ..  Server is now running on port 5000
+yw: [object Object]
+ans: [object Object]
+yw: [object Object]
+ans: [object Object]

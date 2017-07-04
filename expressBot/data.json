@@ -1,0 +1,87 @@
+{
+    "topics": {
+        "random": {
+            "name": "random",
+            "flags": {
+                "keep": "keep"
+            },
+            "keywords": [],
+            "filter": null,
+            "gambits": [
+                "Q18Wah4l",
+                "8zJBA2Ww",
+                "PyH1LaZh"
+            ]
+        }
+    },
+    "gambits": {
+        "Q18Wah4l": {
+            "trigger": {
+                "flags": {},
+                "filter": null,
+                "question": false,
+                "raw": "[what|how] [is the] weather",
+                "clean": "(?:(?:\\s|\\b)+(?:what|how)(?:\\s|\\b)+|(?:\\s|\\b)+)(?:(?:\\s|\\b)+(?:is the)(?:\\s|\\b)+|(?:\\s|\\b)+)weather"
+            },
+            "replies": [
+                "nhk9wbDm"
+            ],
+            "conditional": null,
+            "conversation": null,
+            "topic": "random"
+        },
+        "8zJBA2Ww": {
+            "trigger": {
+                "flags": {},
+                "filter": null,
+                "question": false,
+                "raw": "[in] *~2",
+                "clean": "(?:(?:\\s|\\b)+(?:in)(?:\\s|\\b)+|(?:\\s|\\b)+)\\s*((?:[^\\s]+\\s+){0,1}(?:[^\\s]+)?)\\s*"
+            },
+            "replies": [
+                "hX3kkgdx"
+            ],
+            "conditional": null,
+            "conversation": [
+                "nhk9wbDm"
+            ],
+            "topic": "random"
+        },
+        "PyH1LaZh": {
+            "trigger": {
+                "flags": {},
+                "filter": null,
+                "question": false,
+                "raw": "[what|how] [is the] weather in *~2",
+                "clean": "(?:(?:\\s|\\b)+(?:what|how)(?:\\s|\\b)+|(?:\\s|\\b)+)(?:(?:\\s|\\b)+(?:is the)(?:\\s|\\b)+|(?:\\s|\\b)+)weather in\\s*((?:[^\\s]+\\s+){0,1}(?:[^\\s]+)?)\\s*"
+            },
+            "replies": [
+                "pkWUiq72"
+            ],
+            "conditional": null,
+            "conversation": null,
+            "topic": "random"
+        }
+    },
+    "replies": {
+        "nhk9wbDm": {
+            "string": "in which city?",
+            "filter": null,
+            "keep": false
+        },
+        "hX3kkgdx": {
+            "string": "^getWeather(<cap1>)",
+            "filter": null,
+            "keep": false
+        },
+        "pkWUiq72": {
+            "string": "^getWeather(<cap1>)",
+            "filter": null,
+            "keep": false
+        }
+    },
+    "checksums": {
+        "./chat/main.ss": "730ebd25353e3cab4037c33973667c5b429c636d"
+    },
+    "version": 1
+}
